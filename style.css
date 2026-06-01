@@ -690,3 +690,59 @@ body {
     background: transparent !important;
     color: inherit !important;
 }
+/* Ürün kartı alt siyah alan kesin düzeltme */
+.product-card,
+.menu-card,
+.card,
+.product,
+.menu-item {
+    overflow: hidden;
+}
+
+.product-card div,
+.menu-card div,
+.card div,
+.product div,
+.menu-item div {
+    background-color: transparent;
+}
+
+.product-card .content,
+.product-card .info,
+.product-card .details,
+.product-card .body,
+.product-card .footer,
+.product-card .bottom,
+.product-card .title,
+.product-card .name,
+.product-card .price,
+.product-card .meta,
+.product-card .emoji,
+.menu-card .content,
+.menu-card .info,
+.menu-card .details,
+.menu-card .body,
+.menu-card .footer,
+.menu-card .bottom,
+.menu-card .title,
+.menu-card .name,
+.menu-card .price,
+.menu-card .meta,
+.menu-card .emoji,
+.menu-item .content,
+.menu-item .info,
+.menu-item .details,
+.menu-item .body,
+.menu-item .footer,
+.menu-item .bottom,
+.menu-item .title,
+.menu-item .name,
+.menu-item .price,
+.menu-item .meta,
+.menu-item .emoji {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
