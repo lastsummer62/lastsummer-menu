@@ -670,3 +670,23 @@ body {
     height: 42% !important;
   }
 }
+/* Ürün kartı fiyat/emoji alanı düzeltme */
+.product-meta,
+.product-price,
+.price,
+.product-footer,
+.product-card .meta,
+.product-card .price {
+    background: transparent !important;
+    color: #111 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.product-card .emoji,
+.product-card .icon,
+.product-emoji,
+.product-icon {
+    background: transparent !important;
+    color: inherit !important;
+}
