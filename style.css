@@ -670,18 +670,32 @@ body {
     height: 42% !important;
   }
 }
-/* Ürün kartı fiyat/emoji kısmı sade düzeltme */
+/* Ürün kartı arka plan düzeltme - sadece ürün kartları */
+.product-card {
+  background: linear-gradient(180deg, #141414, #090909) !important;
+  border: 1px solid rgba(216, 179, 106, 0.16) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34) !important;
+}
+
+.product-card:hover {
+  background: linear-gradient(180deg, #181818, #0b0b0b) !important;
+  border-color: rgba(216, 179, 106, 0.28) !important;
+}
+
+.product-media {
+  background: #ffffff !important;
+}
+
+.product-info {
+  background: #111111 !important;
+}
+
 .product-bottom span {
-  background: rgba(216, 179, 106, 0.14) !important;
+  background: rgba(216, 179, 106, 0.12) !important;
   color: var(--gold-light) !important;
-  border: 1px solid rgba(216, 179, 106, 0.24) !important;
-  box-shadow: none !important;
+  border: 1px solid rgba(216, 179, 106, 0.18) !important;
 }
 
 .product-bottom b {
   color: var(--gold-light) !important;
-}
-
-.product-info {
-  background: #000 !important;
 }
