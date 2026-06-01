@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#050505" />
+  <title>Last Summer Menü</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="menu-shell">
+
+    <header class="hero hero-visual-only">
+      <div class="hero-visual-frame">
+        <img src="assets/hero-banner.jpg" alt="Last Summer premium menü görseli" />
+        <a
+          class="hero-instagram-hotspot"
+          href="https://www.instagram.com/last.summer62/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram last.summer62 hesabını aç"
+          onclick="window.open('https://www.instagram.com/last.summer62/', '_blank'); return false;"
+        >
+          @last.summer62
+        </a>
+      </div>
+    </header>
+
+    <section class="toolbar" aria-label="Menü filtreleri">
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Menüde ara: çay, kahve, tost..." autocomplete="off" />
+      </div>
+      <div id="categoryTabs" class="category-tabs"></div>
+    </section>
+
+    <section class="menu-intro">
+      <div>
+        <span class="overline">GÜNCEL MENÜ</span>
+        <h2 id="activeTitle">Tüm Ürünler</h2>
+      </div>
+      <b id="productCount">0 ürün</b>
+    </section>
+
+    <section id="menuContent" class="menu-content" aria-live="polite"></section>
+  </main>
+
+  <button id="topButton" class="top-button" type="button" aria-label="Yukarı çık">↑</button>
+
+  <script>
+    const money = (value) => `${Number(value || 0).toLocaleString("tr-TR", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} ₺`;
+    const imagePath = (img) => img ? `images/${img}` : "";
+
+    let allProducts = [];
+    let activeCategory = "Tümü";
+
+    const preferredOrder = [
+      "Sıcak İçecekler",
+      "Soğuk İçecekler",
+      "Tatlılar",
+      "Nargile",
+      "Tavuk Çeşitleri",
+      "Tostlar",
+      "Makarna",
+      "Dondurma",
+      "Menemen",
+      "Salata"
+    ];
+
+    function sortCategories(categories) {
+      return categories.sort((a, b) => {
+        const ai = preferredOrder.indexOf(a);
+        const bi = preferredOrder.indexOf(b);
+        if (ai !== -1 || bi !== -1) {
+          return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+        }
+        return a.localeCompare(b, "tr");
+      });
+    }
+
+    function safeText(text) {
+      return String(text || "").replace(/[&<>'"]/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "'": "&#39;",
+        '"': "&quot;"
+      }[char]));
+    }
+
+    function productCard(product) {
+      const img = imagePath(product.image);
+      const emoji = product.emoji || "☕";
+      const name = safeText(product.name);
+      const category = safeText(product.category || "Menü");
+
+      return `
+        <article class="product-card">
+          <div class="product-media ${img ? "" : "placeholder"}">
+            ${img ? `<img src="${img}" alt="${name}" loading="lazy" onerror="this.closest('.product-media').classList.add('placeholder'); this.remove();" />` : `<span>${emoji}</span>`}
+            <div class="media-shade"></div>
+            <small>${category}</small>
+          </div>
+          <div class="product-info">
+            <strong>${name}</strong>
+            <div class="product-bottom">
+              <span>${emoji}</span>
+              <b>${money(product.price)}</b>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderCategories(products) {
+      const orderedCategories = sortCategories([...new Set(products.map(p => p.category).filter(Boolean))]);
+      const categories = ["Tümü", ...orderedCategories];
+
+      document.getElementById("categoryTabs").innerHTML = categories.map(cat => `
+        <button class="${cat === activeCategory ? "active" : ""}" type="button" data-category="${safeText(cat)}">
+          ${cat === "Tümü" ? "✦ " : ""}${safeText(cat)}
+        </button>
+      `).join("");
+
+      document.querySelectorAll("[data-category]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeCategory = btn.dataset.category;
+          render();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+    }
+
+    function getFiltered() {
+      const search = document.getElementById("searchInput").value.trim().toLowerCase();
+      return allProducts.filter(p => {
+        const categoryOk = activeCategory === "Tümü" || p.category === activeCategory;
+        const text = `${p.name} ${p.category}`.toLowerCase();
+        return categoryOk && text.includes(search);
+      });
+    }
+
+    function render() {
+      const filtered = getFiltered();
+
+      const grouped = filtered.reduce((acc, product) => {
+        const category = product.category || "Menü";
+        if (!acc[category]) acc[category] = [];
+        acc[category].push(product);
+        return acc;
+      }, {});
+
+      const groupKeys = activeCategory === "Tümü"
+        ? sortCategories(Object.keys(grouped))
+        : Object.keys(grouped);
+
+      document.getElementById("activeTitle").textContent = activeCategory === "Tümü" ? "Tüm Ürünler" : activeCategory;
+      document.getElementById("productCount").textContent = `${filtered.length} ürün`;
+
+      document.getElementById("menuContent").innerHTML = groupKeys.map(category => `
+        <section class="category-block">
+          <div class="category-title">
+            <h3>${safeText(category)}</h3>
+            <span>${grouped[category].length} ürün</span>
+          </div>
+          <div class="product-grid">${grouped[category].map(productCard).join("")}</div>
+        </section>
+      `).join("") || `<p class="empty">Aradığın ürün bulunamadı.</p>`;
+
+      renderCategories(allProducts);
+    }
+
+    fetch("products.json?v=" + Date.now())
+      .then(res => res.json())
+      .then(products => {
+        allProducts = products.filter(p => p.active !== false);
+        render();
+      })
+      .catch(() => {
+        document.getElementById("menuContent").innerHTML = `<p class="empty">Menü yüklenemedi.</p>`;
+      });
+
+    document.getElementById("searchInput").addEventListener("input", render);
+
+    document.getElementById("topButton").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", () => {
+      document.getElementById("topButton").classList.toggle("show", window.scrollY > 500);
+    }, { passive: true });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const instagramHotspot = document.querySelector(".hero-instagram-hotspot");
+      if (instagramHotspot) {
+        instagramHotspot.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.open("https://www.instagram.com/last.summer62/", "_blank", "noopener,noreferrer");
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

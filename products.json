@@ -1,0 +1,866 @@
+[
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Çay",
+    "price": 40.0,
+    "emoji": "🫖",
+    "image": "cay.webp",
+    "description": "İnce belli bardakta servis edilen, günün her saatine yakışan klasik demleme çay.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Büyük Çay",
+    "price": 80.0,
+    "emoji": "🫖",
+    "image": "buyuk_cay.webp",
+    "description": "Uzun sohbetlere eşlik eden, daha doyurucu porsiyonda demleme çay.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Ada Çayı",
+    "price": 100.0,
+    "emoji": "🌿",
+    "image": "ada_cayi.webp",
+    "description": "Bitkisel aromasıyla öne çıkan, ferahlatıcı ve yumuşak içimli ada çayı.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Kış Çayı",
+    "price": 100.0,
+    "emoji": "🫖",
+    "image": "kis_cayi.webp",
+    "description": "Tarçın ve meyvemsi notalarla zenginleşen, iç ısıtan özel kış harmanı.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Yeşil Çay",
+    "price": 125.0,
+    "emoji": "🍵",
+    "image": "yesil_cay.webp",
+    "description": "Hafif ve dengeli aromasıyla öne çıkan, sade içimli klasik yeşil çay.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Ihlamur",
+    "price": 125.0,
+    "emoji": "🌿",
+    "image": "ihlamur.webp",
+    "description": "Yumuşak içimi ve hoş kokusuyla rahatlatıcı bitki çayı.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Oralet Çeşitleri",
+    "price": 40.0,
+    "emoji": "🫖",
+    "image": "oralet_cesitleri.webp",
+    "description": "Tatlı ve sıcak içimiyle nostaljik oralet çeşitleri.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Türk Kahvesi",
+    "price": 110.0,
+    "emoji": "☕",
+    "image": "turk_kahvesi.webp",
+    "description": "Geleneksel usulle hazırlanan, yoğun aromalı köpüklü Türk kahvesi.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Menengiç Kahvesi",
+    "price": 110.0,
+    "emoji": "☕",
+    "image": "menengic_kahvesi.webp",
+    "description": "Kendine özgü aromasıyla öne çıkan, yumuşak içimli geleneksel menengiç kahvesi.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Dibek Kahvesi",
+    "price": 100.0,
+    "emoji": "☕",
+    "image": "dibek_kahvesi.webp",
+    "description": "Daha yumuşak yapılı, bol köpüklü ve aromatik dibek kahvesi.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Espresso",
+    "price": 110.0,
+    "emoji": "☕",
+    "image": "espresso.webp",
+    "description": "Yoğun gövdeli, sert ve kısa içimli klasik espresso.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Espresso Affogato",
+    "price": 150.0,
+    "emoji": "☕",
+    "image": "espresso_affogato.webp",
+    "description": "Espresso ve dondurma birleşimiyle sıcak-soğuk dengeli özel lezzet.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Americano 225 ml",
+    "price": 125.0,
+    "emoji": "☕",
+    "image": "americano_225_ml.webp",
+    "description": "Espressonun sıcak suyla dengelendiği, daha hafif ve uzun içimli kahve.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Filtre Kahve",
+    "price": 150.0,
+    "emoji": "☕",
+    "image": "filtre_kahve.webp",
+    "description": "Dengeli gövdesi ve temiz içimiyle klasik filtre kahve deneyimi.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Latte 225 ml",
+    "price": 175.0,
+    "emoji": "🥛",
+    "image": "latte_225_ml.webp",
+    "description": "Yumuşak süt dokusu ve espresso birleşimiyle dengeli latte.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Karamel Latte",
+    "price": 150.0,
+    "emoji": "☕",
+    "image": "karamel_latte.webp",
+    "description": "Espresso ve süt dengesine karamel aroması eşlik eden yumuşak latte.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Vanilyalı Latte",
+    "price": 175.0,
+    "emoji": "☕",
+    "image": "vanilyali_latte.webp",
+    "description": "Vanilya notalarıyla tatlandırılmış, yumuşak ve aromatik latte.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Fındıklı Latte",
+    "price": 175.0,
+    "emoji": "☕",
+    "image": "findikli_latte.webp",
+    "description": "Hafif fındık aromasıyla zenginleşen, dolgun içimli latte.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Vanilyalı Macchiato",
+    "price": 175.0,
+    "emoji": "☕",
+    "image": "vanilyali_macchiato.webp",
+    "description": "Vanilya aroması ve espresso dokusuyla katmanlı, tatlı içimli macchiato.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Cappuccino",
+    "price": 150.0,
+    "emoji": "☕",
+    "image": "cappuccino.webp",
+    "description": "Yoğun süt köpüğü ve espresso dengesiyle klasik cappuccino.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Sade Nescafe",
+    "price": 125.0,
+    "emoji": "☕",
+    "image": "sade_nescafe.webp",
+    "description": "Klasik kahve tadını sade ve pratik içimle sunan sıcak nescafe.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Sütlü Nescafe",
+    "price": 130.0,
+    "emoji": "☕",
+    "image": "sutlu_nescafe.webp",
+    "description": "Sütle yumuşatılmış, hafif ve dengeli sıcak nescafe.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Sıcak Çikolata",
+    "price": 150.0,
+    "emoji": "🍫",
+    "image": "sicak_cikolata.webp",
+    "description": "Yoğun kakao tadıyla hazırlanan, tatlı ve iç ısıtan sıcak çikolata.",
+    "active": true
+  },
+  {
+    "category": "Sıcak İçecekler",
+    "name": "Salep",
+    "price": 130.0,
+    "emoji": "🥤",
+    "image": "salep.webp",
+    "description": "Tarçın dokunuşuyla servis edilen, geleneksel ve yumuşak içimli salep.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Su",
+    "price": 30.0,
+    "emoji": "💧",
+    "image": "su.webp",
+    "description": "Serin ve sade içim için klasik su.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Sade Soda",
+    "price": 60.0,
+    "emoji": "🥤",
+    "image": "sade_soda.webp",
+    "description": "Ferahlık veren, klasik sade soda.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Meyveli Soda",
+    "price": 70.0,
+    "emoji": "🥤",
+    "image": "meyveli_soda.webp",
+    "description": "Gazlı yapısına meyve aroması eşlik eden serinletici soda.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Churchill",
+    "price": 100.0,
+    "emoji": "🥤",
+    "image": "churchill.webp",
+    "description": "Limon, tuz ve sodanın ferahlatıcı birleşimiyle hazırlanan özel içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Kola",
+    "price": 100.0,
+    "emoji": "🥤",
+    "image": "kola.webp",
+    "description": "Yoğun gazlı yapısıyla soğuk servis edilen klasik kola.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Şişe Kola",
+    "price": 70.0,
+    "emoji": "🥤",
+    "image": "sise_kola.webp",
+    "description": "Cam şişede servis edilen, klasik lezzette kola.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Fanta",
+    "price": 100.0,
+    "emoji": "🥤",
+    "image": "fanta.webp",
+    "description": "Portakal aromalı, serinletici ve gazlı içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Sprite",
+    "price": 100.0,
+    "emoji": "🥤",
+    "image": "sprite.webp",
+    "description": "Limon-lime aromalı, hafif ve serinletici gazlı içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Sprite Limon Aromalı Gazoz",
+    "price": 100.0,
+    "emoji": "🥤",
+    "image": "sprite_limon_aromali_gazoz.webp",
+    "description": "Limon aroması öne çıkan, ferah ve gazlı içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "FuseTea",
+    "price": 100.0,
+    "emoji": "🧊",
+    "image": "fusetea.webp",
+    "description": "Meyvemsi aromasıyla ferah içim sunan soğuk çay.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Cappy",
+    "price": 100.0,
+    "emoji": "🧃",
+    "image": "cappy.webp",
+    "description": "Meyve aroması öne çıkan, serin içimli kutu meyve içeceği.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Limonata",
+    "price": 130.0,
+    "emoji": "🍋",
+    "image": "limonata.webp",
+    "description": "Taze limon aromasıyla hazırlanan, ferahlatıcı ev yapımı tarz limonata.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Redbull",
+    "price": 120.0,
+    "emoji": "🥤",
+    "image": "redbull.webp",
+    "description": "Enerji veren yapısıyla soğuk servis edilen enerji içeceği.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Soğuk Kahve",
+    "price": 160.0,
+    "emoji": "🧊",
+    "image": "soguk_kahve.webp",
+    "description": "Buzla servis edilen, yumuşak içimli klasik soğuk kahve.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Aromalı Soğuk Kahve",
+    "price": 160.0,
+    "emoji": "🧊",
+    "image": "aromali_soguk_kahve.webp",
+    "description": "Kahveye aromatik tatların eşlik ettiği serinletici soğuk kahve.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Milkshake",
+    "price": 160.0,
+    "emoji": "🥤",
+    "image": "milkshake.webp",
+    "description": "Yoğun kıvamlı, soğuk ve tatlı içimli milkshake.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Kahveli Milkshake",
+    "price": 160.0,
+    "emoji": "🥤",
+    "image": "kahveli_milkshake.webp",
+    "description": "Kahve aromasıyla zenginleşen, serin ve yoğun kıvamlı milkshake.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Frappe Milkshake",
+    "price": 160.0,
+    "emoji": "🥤",
+    "image": "frappe_milkshake.webp",
+    "description": "Buzlu ve köpüklü dokusuyla ferah içimli frappe tarz milkshake.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Smoothie Milkshake",
+    "price": 160.0,
+    "emoji": "🥤",
+    "image": "smoothie_milkshake.webp",
+    "description": "Meyvemsi karakteriyle öne çıkan, yumuşak içimli smoothie tarz içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Teashake",
+    "price": 160.0,
+    "emoji": "🥤",
+    "image": "teashake.webp",
+    "description": "Çay ve serinletici aromaların buluştuğu farklı ve hafif içimli özel içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Frozen",
+    "price": 160.0,
+    "emoji": "🧊",
+    "image": "frozen.webp",
+    "description": "Buzlu dokusuyla öne çıkan, serinletici frozen içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Atom",
+    "price": 135.0,
+    "emoji": "🍹",
+    "image": "atom.webp",
+    "description": "Meyve ve ferah aromaların birleştiği canlı ve enerji veren özel içecek.",
+    "active": true
+  },
+  {
+    "category": "Soğuk İçecekler",
+    "name": "Aromalı Meyve Kokteyli",
+    "price": 150.0,
+    "emoji": "🍹",
+    "image": "aromali_meyve_kokteyli.webp",
+    "description": "Meyve aromalarıyla hazırlanan, serin ve renkli kokteyl tarz içecek.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Belçika Çikolatalı Pasta",
+    "price": 175.0,
+    "emoji": "🍫",
+    "image": "belcika_cikolatali_pasta.webp",
+    "description": "Yoğun çikolata lezzetiyle öne çıkan, yumuşak dokulu özel pasta.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Çikolatalı Pasta",
+    "price": 175.0,
+    "emoji": "🍰",
+    "image": "cikolatali_pasta.webp",
+    "description": "Klasik çikolata lezzetini sevenler için dolgun ve tatlı pasta dilimi.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Hindistan Cevizli Pasta",
+    "price": 175.0,
+    "emoji": "🍰",
+    "image": "hindistan_cevizli_pasta.webp",
+    "description": "Hafif Hindistan cevizi aromasıyla zenginleşen yumuşak pasta.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Kalpli Pasta",
+    "price": 150.0,
+    "emoji": "🍰",
+    "image": "kalpli_pasta.webp",
+    "description": "Görsel sunumuyla öne çıkan, hafif ve tatlı pasta seçeneği.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Frambuazlı Cheesecake",
+    "price": 175.0,
+    "emoji": "🍰",
+    "image": "frambuazli_cheesecake.webp",
+    "description": "Frambuaz sosuyla dengelenen, hafif ekşi tatlı lezzette cheesecake.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Limonlu Cheesecake",
+    "price": 175.0,
+    "emoji": "🍰",
+    "image": "limonlu_cheesecake.webp",
+    "description": "Limon aromasıyla ferahlayan, yumuşak dokulu cheesecake.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Tiramisu",
+    "price": 175.0,
+    "emoji": "🍰",
+    "image": "tiramisu.webp",
+    "description": "Kahve aromalı katmanlarıyla klasik İtalyan esintili tatlı.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Sufle",
+    "price": 190.0,
+    "emoji": "🍫",
+    "image": "sufle.webp",
+    "description": "Akışkan çikolata dolgulu, sıcak servis edilen yoğun tatlı.",
+    "active": true
+  },
+  {
+    "category": "Tatlılar",
+    "name": "Fıstık Rüyası",
+    "price": 200.0,
+    "emoji": "🍰",
+    "image": "fistik_ruyasi.webp",
+    "description": "Fıstık aromasıyla öne çıkan, zengin ve özel tatlı deneyimi.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Karpuz",
+    "price": 400.0,
+    "emoji": "🍉",
+    "image": "nargile_karpuz.webp",
+    "description": "Tatlı ve ferah karpuz aromasıyla keyifli nargile deneyimi.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Karpuz Çilek",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_karpuz_cilek.webp",
+    "description": "Karpuz ve çileğin uyumlu birleşimiyle meyvemsi nargile aroması.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Çilek",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_cilek.webp",
+    "description": "Tatlı çilek aromasıyla yumuşak içimli nargile keyfi.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Üzüm Nane",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_uzum_nane.webp",
+    "description": "Üzümün tatlılığına nane ferahlığının eşlik ettiği sevilen aroma.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Şeftali Love66",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_seftali_love66.webp",
+    "description": "Şeftali temelli, canlı ve aromatik nargile karışımı.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Ice Bon Bon",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_ice_bon_bon.webp",
+    "description": "Ferah ve serin karakteriyle öne çıkan yoğun aromalı nargile.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Dejavu",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_dejavu.webp",
+    "description": "Karışık aromalı, belirgin ve kalıcı tat sunan özel nargile.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Portakal Nane Limon",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_portakal_nane_limon.webp",
+    "description": "Narenciye ve nane dengesini sevenler için ferah nargile seçeneği.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Nargile Turkish Mastic",
+    "price": 400.0,
+    "emoji": "💨",
+    "image": "nargile_turkish_mastic.webp",
+    "description": "Damla sakızı karakteriyle farklılaşan özel nargile aroması.",
+    "active": true
+  },
+  {
+    "category": "Nargile",
+    "name": "Kafa Değişimi",
+    "price": 175.0,
+    "emoji": "💨",
+    "image": "kafa_degisimi.webp",
+    "description": "Nargile keyfini tazelemek için ekstra kafa değişim hizmeti.",
+    "active": true
+  },
+  {
+    "category": "Tavuk Çeşitleri",
+    "name": "Köri Soslu Tavuk",
+    "price": 350.0,
+    "emoji": "🍗",
+    "image": "kori_soslu_tavuk.webp",
+    "description": "Köri sosunun aromasıyla hazırlanan, doyurucu tavuk tabağı.",
+    "active": true
+  },
+  {
+    "category": "Tavuk Çeşitleri",
+    "name": "Barbekü Soslu Tavuk",
+    "price": 350.0,
+    "emoji": "🍗",
+    "image": "barbeku_soslu_tavuk.webp",
+    "description": "Barbekü sosunun isli ve tatlı notalarıyla servis edilen tavuk.",
+    "active": true
+  },
+  {
+    "category": "Tavuk Çeşitleri",
+    "name": "Soya Soslu Tavuk",
+    "price": 350.0,
+    "emoji": "🍗",
+    "image": "soya_soslu_tavuk.webp",
+    "description": "Soya sosuyla lezzetlendirilmiş, dengeli ve doyurucu tavuk seçeneği.",
+    "active": true
+  },
+  {
+    "category": "Tavuk Çeşitleri",
+    "name": "Piliç Tava",
+    "price": 350.0,
+    "emoji": "🍗",
+    "image": "pilic_tava.webp",
+    "description": "Sıcak servis edilen, klasik ve doyurucu piliç tava.",
+    "active": true
+  },
+  {
+    "category": "Tavuk Çeşitleri",
+    "name": "Tavuk Sote",
+    "price": 350.0,
+    "emoji": "🍗",
+    "image": "tavuk_sote.webp",
+    "description": "Sebzelerle harmanlanan, sıcak ve lezzetli tavuk sote.",
+    "active": true
+  },
+  {
+    "category": "Tostlar",
+    "name": "Kaşarlı Tost Tabağı",
+    "price": 160.0,
+    "emoji": "🥪",
+    "image": "kasarli_tost_tabagi.webp",
+    "description": "Eriyen kaşar lezzetiyle hazırlanan, sıcak tost tabağı.",
+    "active": true
+  },
+  {
+    "category": "Tostlar",
+    "name": "Karışık Tost Tabağı",
+    "price": 200.0,
+    "emoji": "🥪",
+    "image": "karisik_tost_tabagi.webp",
+    "description": "Kaşar ve sucuk uyumuyla hazırlanan doyurucu karışık tost tabağı.",
+    "active": true
+  },
+  {
+    "category": "Tostlar",
+    "name": "Sebzeli Karışık Tost Tabağı",
+    "price": 220.0,
+    "emoji": "🥪",
+    "image": "sebzeli_karisik_tost_tabagi.webp",
+    "description": "Sebze dokunuşuyla zenginleşen, sıcak karışık tost tabağı.",
+    "active": true
+  },
+  {
+    "category": "Tostlar",
+    "name": "Patates Cipsi",
+    "price": 140.0,
+    "emoji": "🍟",
+    "image": "patates_cipsi.webp",
+    "description": "Çıtır dokusuyla atıştırmalık patates cipsi.",
+    "active": true
+  },
+  {
+    "category": "Makarna",
+    "name": "Penne Arrabiatta",
+    "price": 200.0,
+    "emoji": "🍝",
+    "image": "penne_arrabiatta.webp",
+    "description": "Domates sosu ve hafif acı aromasıyla klasik penne arrabiatta.",
+    "active": true
+  },
+  {
+    "category": "Makarna",
+    "name": "Tavuklu Penne",
+    "price": 275.0,
+    "emoji": "🍝",
+    "image": "tavuklu_penne.webp",
+    "description": "Tavuk parçalarıyla zenginleşen, doyurucu penne makarna.",
+    "active": true
+  },
+  {
+    "category": "Makarna",
+    "name": "Fettuccine Alfredo",
+    "price": 275.0,
+    "emoji": "🍝",
+    "image": "fettuccine_alfredo.webp",
+    "description": "Kremalı sosuyla öne çıkan, yumuşak içimli fettuccine alfredo.",
+    "active": true
+  },
+  {
+    "category": "Makarna",
+    "name": "Köri Soslu Makarna",
+    "price": 275.0,
+    "emoji": "🍝",
+    "image": "kori_soslu_makarna.webp",
+    "description": "Köri aromasıyla farklılaşan, kremalı ve doyurucu makarna.",
+    "active": true
+  },
+  {
+    "category": "Makarna",
+    "name": "Sebzeli Makarna",
+    "price": 250.0,
+    "emoji": "🍝",
+    "image": "sebzeli_makarna.webp",
+    "description": "Sebzelerle harmanlanan, hafif ve doyurucu makarna seçeneği.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Vanilya",
+    "price": 50.0,
+    "emoji": "🍨",
+    "image": "vanilya.webp",
+    "description": "Klasik vanilya aromasıyla sade ve yumuşak dondurma.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Çikolata",
+    "price": 50.0,
+    "emoji": "🍫",
+    "image": "cikolata.webp",
+    "description": "Yoğun kakao tadıyla klasik çikolatalı dondurma.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Çilek",
+    "price": 50.0,
+    "emoji": "🍓",
+    "image": "cilek.webp",
+    "description": "Meyvemsi çilek aromasıyla serin ve tatlı dondurma.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Limon",
+    "price": 50.0,
+    "emoji": "🍋",
+    "image": "limon.webp",
+    "description": "Ferah limon aromasıyla hafif ve serinletici dondurma.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Karamel",
+    "price": 50.0,
+    "emoji": "🍨",
+    "image": "karamel.webp",
+    "description": "Karamel aromasıyla tatlı ve yumuşak dondurma.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Kavun",
+    "price": 50.0,
+    "emoji": "🍨",
+    "image": "kavun.webp",
+    "description": "Kavun aromasıyla ferah ve hafif dondurma.",
+    "active": true
+  },
+  {
+    "category": "Dondurma",
+    "name": "Mavi Dünya",
+    "price": 50.0,
+    "emoji": "🍨",
+    "image": "mavi_dunya.webp",
+    "description": "Rengi ve aromasıyla farklılaşan eğlenceli dondurma seçeneği.",
+    "active": true
+  },
+  {
+    "category": "Menemen",
+    "name": "Menemen Normal",
+    "price": 175.0,
+    "emoji": "🍳",
+    "image": "menemen_normal.webp",
+    "description": "Domates, biber ve yumurtayla hazırlanan klasik menemen.",
+    "active": true
+  },
+  {
+    "category": "Menemen",
+    "name": "Sucuklu Menemen",
+    "price": 190.0,
+    "emoji": "🍳",
+    "image": "sucuklu_menemen.webp",
+    "description": "Sucuk lezzetiyle zenginleşen, sıcak ve doyurucu menemen.",
+    "active": true
+  },
+  {
+    "category": "Menemen",
+    "name": "Karışık Menemen",
+    "price": 200.0,
+    "emoji": "🍳",
+    "image": "karisik_menemen.webp",
+    "description": "Klasik menemene ek lezzetlerle daha dolu bir tabak.",
+    "active": true
+  },
+  {
+    "category": "Salata",
+    "name": "Akdeniz Salata",
+    "price": 150.0,
+    "emoji": "🥗",
+    "image": "akdeniz_salata.webp",
+    "description": "Taze yeşillikler ve Akdeniz esintili malzemelerle hafif salata.",
+    "active": true
+  },
+  {
+    "category": "Salata",
+    "name": "Mevsim Salata",
+    "price": 125.0,
+    "emoji": "🥗",
+    "image": "mevsim_salata.webp",
+    "description": "Mevsim yeşillikleriyle hazırlanan taze ve hafif salata.",
+    "active": true
+  },
+  {
+    "category": "Salata",
+    "name": "Çoban Salata",
+    "price": 135.0,
+    "emoji": "🥗",
+    "image": "coban_salata.webp",
+    "description": "Domates, salatalık ve taze malzemelerle klasik çoban salata.",
+    "active": true
+  },
+  {
+    "category": "Salata",
+    "name": "Tavuklu Salata",
+    "price": 225.0,
+    "emoji": "🥗",
+    "image": "tavuklu_salata.webp",
+    "description": "Tavuk parçalarıyla doyuruculuğu artan taze salata.",
+    "active": true
+  },
+  {
+    "category": "Salata",
+    "name": "Ton Balıklı Salata",
+    "price": 250.0,
+    "emoji": "🥗",
+    "image": "ton_balikli_salata.webp",
+    "description": "Ton balığıyla zenginleşen, hafif ama doyurucu salata.",
+    "active": true
+  },
+  {
+    "category": "Salata",
+    "name": "Sezar Salata",
+    "price": 250.0,
+    "emoji": "🥗",
+    "image": "sezar_salata.webp",
+    "description": "Özel sosu ve doyurucu içeriğiyle klasik sezar salata.",
+    "active": true
+  }
+]

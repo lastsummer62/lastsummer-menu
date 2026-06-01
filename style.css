@@ -1,0 +1,672 @@
+:root {
+  --bg: #050505;
+  --bg2: #0a0a0a;
+  --bg3: #101010;
+  --panel: rgba(255, 255, 255, 0.04);
+  --panel-strong: rgba(255, 255, 255, 0.07);
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --text: #f7f7f7;
+  --muted: #acacac;
+  --gold: #d8b36a;
+  --gold-soft: #b89355;
+  --gold-light: #ecd19a;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #000;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.menu-shell {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding: 18px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 34px;
+  border: 1px solid var(--line);
+  background: #000;
+  box-shadow: var(--shadow);
+}
+
+.hero-visual-only {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.hero-visual-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 34px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.hero-visual-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Görselin içindeki @last.summer62 yazısının üstüne tıklanabilir alan */
+.hero-instagram-hotspot {
+  position: absolute;
+  top: 8.5%;
+  right: 5.2%;
+  width: 28%;
+  height: 19%;
+  z-index: 5;
+  display: block;
+  border-radius: 999px;
+  color: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* TOOLBAR */
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 14px 0 12px;
+  background: #000;
+  backdrop-filter: blur(14px);
+}
+
+.search-wrap {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0 16px;
+  background: #000;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.28);
+}
+
+.search-wrap span {
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#searchInput {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--text);
+  background: transparent;
+  font-size: 16px;
+}
+
+#searchInput::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 12px 0 2px;
+  scrollbar-width: none;
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tabs button {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 16px;
+  white-space: nowrap;
+  color: var(--text);
+  background: #000;
+  font-weight: 850;
+  transition: 0.18s ease;
+}
+
+.category-tabs button:hover {
+  border-color: rgba(216,179,106,0.24);
+}
+
+.category-tabs button.active {
+  color: #0a0a0a;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  border-color: transparent;
+  box-shadow: 0 12px 26px rgba(216,179,106,0.20);
+}
+
+/* TITLES */
+.overline,
+.category-title span,
+.product-media small {
+  color: var(--muted);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+}
+
+.menu-intro,
+.category-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.menu-intro {
+  margin: 8px 0 16px;
+  padding: 0 2px;
+}
+
+.menu-intro h2 {
+  margin: 4px 0 0;
+  font-size: clamp(30px, 5vw, 54px);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+#productCount {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 13px;
+  color: var(--gold-light);
+  background: #000;
+  white-space: nowrap;
+}
+
+.category-block {
+  margin: 0 0 34px;
+}
+
+.category-title {
+  margin-bottom: 12px;
+}
+
+.category-title h3 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 40px);
+  letter-spacing: -0.035em;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 14px;
+}
+
+.product-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #000;
+  box-shadow: 0 18px 42px rgba(0,0,0,0.28);
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(216,179,106,0.25);
+  background: #050505;
+}
+
+.product-media {
+  position: relative;
+  min-height: 190px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  background: #000;
+}
+
+.product-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 165px;
+  display: block;
+  object-fit: contain;
+}
+
+.product-media.placeholder {
+  font-size: 56px;
+}
+
+.media-shade {
+  position: absolute;
+  inset: auto 0 0;
+  height: 64px;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.58));
+}
+
+.product-media small {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  max-width: calc(100% - 24px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: #f1f1f1;
+  background: rgba(0,0,0,0.72);
+}
+
+.product-info {
+  display: grid;
+  gap: 13px;
+  padding: 14px;
+}
+
+.product-info strong {
+  min-height: 42px;
+  font-size: 17px;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-bottom span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #090909;
+}
+
+.product-bottom b {
+  color: var(--gold-light);
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.empty {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 34px;
+  color: var(--muted);
+  background: #000;
+  font-weight: 900;
+  text-align: center;
+}
+
+.top-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 30;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 16px;
+  display: none;
+  color: #0a0a0a;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  font-weight: 1000;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.28);
+}
+
+.top-button.show {
+  display: grid;
+  place-items: center;
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+  .menu-shell {
+    padding: 12px;
+  }
+
+  .hero {
+    border-radius: 26px;
+  }
+
+  .hero-visual-only {
+    padding: 0;
+  }
+
+  .hero-visual-frame {
+    border-radius: 24px;
+  }
+
+  .hero-instagram-hotspot {
+    top: 8%;
+    right: 4%;
+    width: 31%;
+    height: 20%;
+  }
+
+  .toolbar {
+    padding-top: 10px;
+  }
+
+  .search-wrap {
+    height: 54px;
+    border-radius: 16px;
+  }
+
+  .menu-intro {
+    align-items: center;
+    margin-top: 4px;
+  }
+
+  .menu-intro h2 {
+    font-size: 31px;
+  }
+
+  #productCount {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .product-card {
+    border-radius: 20px;
+  }
+
+  .product-media {
+    min-height: 122px;
+    padding: 8px;
+  }
+
+  .product-media img {
+    min-height: 106px;
+  }
+
+  .product-media small {
+    left: 8px;
+    bottom: 8px;
+    padding: 5px 8px;
+    font-size: 9px;
+  }
+
+  .product-info {
+    padding: 10px;
+    gap: 9px;
+  }
+
+  .product-info strong {
+    min-height: 36px;
+    font-size: 14px;
+    line-height: 1.18;
+  }
+
+  .product-bottom span {
+    width: 31px;
+    height: 31px;
+    border-radius: 10px;
+  }
+
+  .product-bottom b {
+    font-size: 17px;
+  }
+
+  .category-block {
+    margin-bottom: 28px;
+  }
+
+  .category-title h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  .product-grid {
+    gap: 8px;
+  }
+
+  .product-media {
+    min-height: 112px;
+    padding: 7px;
+  }
+
+  .product-media img {
+    min-height: 96px;
+  }
+
+  .product-info strong {
+    font-size: 13px;
+  }
+
+  .product-bottom b {
+    font-size: 16px;
+  }
+}
+
+
+/* SON DOKUNUŞ: tüm yüzeyleri net siyah tut */
+.menu-shell,
+.hero,
+.hero-visual-only,
+.hero-visual-frame,
+.toolbar,
+.search-wrap,
+.category-tabs button,
+.product-card,
+.product-media,
+.empty {
+  background-color: #000;
+}
+
+.product-card {
+  background-image: none;
+}
+
+.product-media {
+  background-image: none;
+}
+
+body {
+  background-color: #000;
+}
+
+
+/* TELEFON HERO DÜZELTME: yakınlaştırma yok, görsel tam görünsün */
+@media (max-width: 760px) {
+  .hero {
+    border-radius: 24px;
+  }
+
+  .hero-visual-only {
+    padding: 0;
+  }
+
+  .hero-visual-frame {
+    height: auto;
+    border-radius: 24px;
+    background: #000;
+  }
+
+  .hero-visual-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  .hero-instagram-hotspot {
+    top: 8%;
+    right: 4%;
+    width: 34%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-visual-frame {
+    height: auto;
+  }
+
+  .hero-visual-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero-instagram-hotspot {
+    top: 7.5%;
+    right: 4%;
+    width: 36%;
+    height: 20%;
+  }
+}
+
+
+/* TELEFON BOŞLUK DÜZELTME:
+   Görsel ile "Menüde ara" alanı arasındaki boşluğu azaltır.
+   Görsel zoom yapılmadan ekranda biraz daha geniş durur. */
+@media (max-width: 760px) {
+  .menu-shell {
+    padding: 10px 8px 24px;
+  }
+
+  .hero {
+    margin-bottom: 0;
+  }
+
+  .hero-visual-only {
+    margin-bottom: 0;
+  }
+
+  .hero-visual-frame {
+    width: 100%;
+  }
+
+  .hero-visual-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .toolbar {
+    padding-top: 4px;
+  }
+}
+
+@media (max-width: 430px) {
+  .menu-shell {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .toolbar {
+    padding-top: 3px;
+  }
+}
+
+
+/* INSTAGRAM LINK KESİN DÜZELTME
+   Görselin sağ üstündeki @last.summer62 yazısının olduğu bölgeyi
+   telefonda ve Chrome'da rahat tıklanabilir hale getirir. */
+.hero-visual-frame {
+  position: relative;
+}
+
+.hero-instagram-hotspot {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 46% !important;
+  height: 28% !important;
+  z-index: 999 !important;
+  display: block !important;
+  opacity: 0 !important;
+  background: transparent !important;
+  color: transparent !important;
+  text-decoration: none !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  -webkit-tap-highlight-color: rgba(216,179,106,0.18);
+}
+
+@media (max-width: 760px) {
+  .hero-instagram-hotspot {
+    top: 0 !important;
+    right: 0 !important;
+    width: 58% !important;
+    height: 34% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-instagram-hotspot {
+    width: 64% !important;
+    height: 38% !important;
+  }
+}
+
+
+/* INSTAGRAM DIREKT AÇMA DÜZELTMESİ */
+.hero-instagram-hotspot {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 52% !important;
+  height: 34% !important;
+  z-index: 9999 !important;
+  display: block !important;
+  opacity: 0.001 !important;
+  background: transparent !important;
+  color: transparent !important;
+  text-decoration: none !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+}
+
+@media (max-width: 760px) {
+  .hero-instagram-hotspot {
+    width: 66% !important;
+    height: 42% !important;
+  }
+}
